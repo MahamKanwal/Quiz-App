@@ -1,0 +1,42 @@
+/* .container{
+    height: 100vh !important;
+    background-color: #16423C;
+    border: 0;
+}
+.qBox{
+    background-color: #6A9C89;
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.btn-div{
+    /* width: 50%;   */
+/* border-radius: 10px;
+  background-color: #6A9C89 !important;
+}
+
+.btn-div button{
+    background-color: #16423C;
+    
+}
+.btn-div button:hover{
+    background-color: #16423C;
+
+} */
+
+body {
+    background-color: black !important;
+}
+
+/* @font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Regular.ttf);
+} */
+.poppins {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+.border-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

@@ -1,21 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Quiz-App</title>
     <link rel="shortcut icon" href="images/brain.jpg" type="image/x-icon">
-    <link href="bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center mt-5">
+            <div class="col-0 col-md-3"></div>
+            <div class="col-11 col-md-6 border mt-5 bg-light poppins rounded border-shadow ">
+                <!-- top div  -->
+                <div class="container-fluid border-bottom border-2 d-flex justify-content-between align-items-center">
+                <p class="fs-5 fw-medium mb-0 pt-3">
+                 Quiz Application 
+                </p>
+                <span class="fs-6  pt-3"><strong id="numberCall">1</strong> out of <strong>10</strong></span>
+                </div>
+                <!-- end of top div  -->
+                 <!-- value container  -->
+               <div class="p-3" id="valueCon">
+                <p class="fs-4 fw-bold">
+                    <span class="fs-5">1.</span> What is the correct way to declare a JavaScript variable?
+                </p>
+                <div class="row d-flex flex-column p-2 f-6">
+                    <label class="pb-2">
+                        <input type="radio" name="options" value="">
+                        var carName;
+                    </label>
+                    <label class="pb-2">
+                        <input type="radio" name="options" value="">
+                        variable carName;
+                    </label>
+                    <label class="">
+                        <input type="radio" name="options" value="">
+                        v carName;
+                    </label>
+                </div>
+            </div>
 
-
-
-    <script src="bootstrap.js"></script>
+            <div class="text-end pb-3">
+                <button class="btn btn-primary px-3 " id="previousBtn" disabled>Previous</button>
+             <button class="btn btn-primary px-4 " id="nextBtn" onclick="questionValue()"   disabled> Next..</button>
+             
+            </div>
+            </div>
+            <div class="col-0 col-md-3"></div>
+            
+        </div>
+        
+    </div>
+    
     <script src="app.js"></script>
+    <script src="bootstrap.js"></script>
 </body>
-
 </html>
